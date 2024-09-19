@@ -1,48 +1,53 @@
+
+HomeCSSCSS NavbarHorizontal NavbarTryit: Horizontal navbar with a list item floating to the right
+Result Size: 668 x 455
 <!DOCTYPE html>
 <html>
 <head>
-<title>Mini project</title>
-</head>
- <body>
-<meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-.vertical-menu {
-  width: 200px;
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
 }
-
-.vertical-menu a {
-  background-color: #eee;
-  color: black;
+​
+li {
+  float: left;
+}
+​
+li a {
   display: block;
-  padding: 12px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
   text-decoration: none;
 }
-
-.vertical-menu a:hover {
-  background-color: #ccc;
+​
+li a:hover:not(.active) {
+  background-color: #111;
 }
-
-.vertical-menu a.active {
-  background-color: Lightpink;
-  color: white;
+​
+.active {
+  background-color: #04AA6D;
 }
 </style>
 </head>
 <body>
-
-<h1>Kavita International School</h1>
-
-<div class="vertical-menu">
-  
-  <a href="#">Classes</a>
-  <a href="#">Admission</a>
-  <a href="#">Services</a>
-  <a href="#">Staff</a>
-
-   
-       
-
-
+​
+<ul>
+  <li><a href="#home">Home</a></li>
+  <li><a href="#news">News</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li style="float:right"><a class="active" href="#about">About</a></li>
+</ul>
+​
 </body>
 </html>
+​
+​
+​
+
+
 
